@@ -16,7 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase()
-loadLayer(0)
 var nickname = `Guest` + (1000+(8999 * Math.random() << 0))
 function loadLayer(layer) {
     if (layer >= 0 && layer <= 4 ) {
@@ -52,6 +51,8 @@ function loadLayer(layer) {
         }else {document.write("NIE GRZEB W TYM")}
     } else {document.write("NIE GRZEB W TYM");throw"NIE GRZEB W TYM";}
 }
+loadLayer(0)
 function roomJoin() {
     let roomCode = document.getElementById('roomCode').value
 }
+export { loadLayer , roomJoin}
