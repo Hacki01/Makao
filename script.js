@@ -16,7 +16,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getDatabase()
-var nickname = 'Guest' + (9999 * Math.random() << 0)
+loadLayer(0)
+var nickname = `Guest` + (1000+(8999 * Math.random() << 0))
 function loadLayer(layer) {
     if (layer >= 0 && layer <= 4 ) {
         console.log(`Changed layer to ${layer}`)
@@ -54,4 +55,3 @@ function loadLayer(layer) {
 function roomJoin() {
     let roomCode = document.getElementById('roomCode').value
 }
-export { loadLayer}
