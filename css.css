@@ -1,0 +1,31 @@
+body{
+    background:linear-gradient(130deg,pink,lightskyblue);
+    text-align:center;
+    font-family: Verdana;
+}
+p{
+    margin-top:200px;
+    text-shadow: 5px 5px white;
+    font-size:100;
+    color:black;
+}
+input{
+    -moz-appearance: textfield;
+    text-align:center;
+    display:inline-block;
+    width:300px;
+    font-size:30;
+    padding:10px;
+    color:black;
+    border: 4px solid black;
+    border-radius:20px;
+    -webkit-appearance: none;
+    outline:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input:hover{
+    background:pink;
+}
